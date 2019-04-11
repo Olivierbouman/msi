@@ -1,0 +1,102 @@
+
+/* Z-index
+100: button
+5:   .textblock:hover
+2:   #level
+2:   #id
+*/
+
+body {
+    /* background-color: rgb(230, 230, 230); */
+    transition: all 0.4s ease;
+}
+.document {
+    padding-left: 300px; 
+    transition: padding-left 0.4s ease;
+}
+.page {
+    position:relative; 
+    padding-left: 120px;
+}
+img {
+    width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.parent {
+    display: flex;
+    position: absolute;
+    transition: all 0.4s ease
+    /* opacity: .5; */
+    }
+.level_block {
+    padding-right: 10px;
+    /* background-color: greenyellow; */
+    flex: 0 0 110px;
+    text-align: center
+    }
+.fill_block {
+    /* background-color: chocolate; */
+}
+.number_block {
+    padding-left: 10px;
+    /* background-color: blue; */
+    text-align: center;
+    }
+.text_block {
+    /* transition: all 0.4s ease; */
+    padding-left: 10px;
+    /* background-color:rgb(255, 47, 47); */
+    }
+.text_block:hover {
+    z-index:5;
+    background-color:rgb(255, 255, 191);
+    opacity: .5
+}
+
+
+/*Buttons*/
+button:hover {
+    background-color: #3e8e41;
+}
+button {
+    z-index: 100;
+    background-color: #4CAF50;
+    border: 1px solid green;
+    border-radius: 5px 5px 5px 5px;
+    color: white;
+    font-size: 18px;
+    padding: 7.5px;
+    cursor: pointer;
+    border:0px solid #4CAF50;
+    width: 200px;
+    left: 1500px;
+}
+
+#one_step {position: fixed; left:1640px; top: 25px;}
+#suggestions {position: fixed; left:1640px; top: 65px;}
+[type="open_file"] {position: fixed; top: 105px; background-color: cadetblue; border-color:lightslategrey}
+[type="open_file"]:hover {background-color:dodgerblue}
+[type="save_file"] {position: fixed; top: 145px; background-color: cadetblue; border-color:lightslategrey}
+[type="save_file"]:hover {background-color:dodgerblue}
+#button1 {position: fixed; top: 220px}
+#button2 {position: fixed; top: 260px}
+#button3 {position: fixed; top: 300px}
+#button4 {position: fixed; top: 340px}
+#button5 {position: fixed; top: 380px}
+#button6 {position: fixed; top: 420px}
+#button7 {position: fixed; top: 460px}
+#button8 {position: fixed; top: 500px}
+#button9 {position: fixed; top: 540px}
+#button10 {position: fixed; top: 580px}
+#button11 {position: fixed; top: 620px}
+#button12 {position: fixed; top: 660px}
+[type="changeLevel"] {position:fixed; top:720px; background-color:rgb(235, 217, 63);color:black}
+[type="changeLevel"]:hover {background-color: rgb(246, 225, 22);transition: all 0.5s ease}
+#index {position:fixed; top:760px; left:1501px; width: 45px;border-radius: 4px; z-index: 2;}
+#level {position:fixed; top:760px; left:1554px; width: 142px;border-radius: 4px; z-index: 2;}
+
+
+[type="think_ahead"] {position: fixed; left:1500px; top: 840px;background-color:rgb(170, 0, 0)} /*820px*/
+[type="think_ahead"]:hover {background-color:rgb(195, 4, 4);color:azure; font-size: 24px;transition: all 1.0s ease}
+#change_level {background-color: orangered; color:azure; font-size: 15px;transition: all 0.4s ease}
+[type="text"] {position: fixed; top: 400px; left:5000px} /*bad fix*/

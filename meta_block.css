@@ -1,0 +1,184 @@
+
+
+.inspectionBlock{
+    display:none;
+    background-color: whitesmoke;
+    left: 1225px;
+    top: 25px;
+    width:625px;
+    height: 900px;
+    z-index: 10000;
+    position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.4s ease;
+    border-radius: 5px 5px 5px 5px;
+    padding: 7px;
+    /* font-family: "Lucida Console", Monaco, monospace; */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    overflow:scroll
+}
+
+.inspection_text_block{
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 8px;
+    font-size: 14px;
+}
+.inspection_refs_block{
+    background-color: lightgreen;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 8px;
+    font-size: 14px;
+}
+.inspection_meta_block{
+    background-color: rgba(255, 102, 102, 1);
+    padding: 10px;
+    border-radius: 4px;
+    margin: 8px;
+    font-size: 14px;
+    background-color: orange
+}
+.inspection_ref_block{
+    background-color: greenyellow;
+    padding: 5px;
+    border-radius: 4px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+
+
+.meta_button {
+    display: none;
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.update_button, .update_block_button, .add_ref_button, .add_ref_block_button, .add_meta_button {
+    transition-duration: 0.3s;
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 65px;
+    padding: 2px;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.update_block_button{
+    background-color: dodgerblue;
+    margin: 0px 0px 0px 168px;
+    font-size: 17px;
+}
+.add_ref_button{
+   width: 50px;
+   margin: 2px 0px 0px 4px;
+}
+.add_ref_block_button{
+    margin: 0px 0px 0px 5px;
+    background-color: dodgerblue;
+    width: 150px;
+}
+.add_meta_button{
+    width: 100px;
+ }
+.update_button:hover, .update_block_button:hover, .add_ref_button:hover, .add_ref_block_button:hover, .add_meta_button:hover{
+    background-color: lightblue;
+}
+.delete_button, .delete_ref_block_button{
+    transition-duration: 0.3s;
+    background-color: #f44336;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 60px;
+    padding:2px;
+    margin: 0px 0px 0px 3px;
+    font-size: 14px;
+}
+.delete_button:hover, .delete_ref_block_button:hover{
+    transition-duration: 0.3s;
+    background-color: white;
+    color: #f44336;
+}
+.delete_ref_block_button{
+    width: 25px;
+    font-size: 17px;
+}
+.apply_button, .reset_button{
+    position: relative;
+    left: -12%;
+    bottom: 10%;
+    transition-duration: 0.3s;
+    background-color: green;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 175px;
+    padding: 8px;
+    margin: 10px 0px 10px 0px;
+    font-size: 20px;
+}
+.reset_button{
+    left: 55%;
+    background-color: red;
+}
+.reset_button:hover{
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+
+#ref_input, #meta_input {
+    margin-right:10px;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+
+.ref_text{
+    margin: 0px 0px 0px 27px;
+    width: 450px;
+}
+.ref_word_ids{
+    width: 450px;
+}
+.ref_block_definer{
+    padding:5px;
+    font-size: 16px;
+}
+.reference_line{
+    margin-left:34px;
+}
+.ref_level {
+    width:125px;
+    margin: 0px 0px 0px 1px;
+}
+.ref_path {
+    width:125px;
+    margin: 0px 0px 0px 1px;
+}
+.ref_regminer_id {
+    width:135px;
+    margin: 0px 0px 0px 5px;
+}
+.meta_type {
+    width:125px; 
+}
+.meta_text {
+    width:195px; 
+}
+

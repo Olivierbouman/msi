@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>RegMiner Manual Scraper</title>
+        <link rel="stylesheet" type="text/css" href="JS/interface.css">
+        <link rel="stylesheet" type="text/css" href="JS/buttons.css">
+        <link rel="stylesheet" type="text/css" href="JS/sidebar.css">
+        <link rel="stylesheet" type="text/css" href="JS/reference_hover.css">
+        <link rel="stylesheet" type="text/css" href="JS/meta_block.css">
+    </head>
+
+    <script defer src="JS/annotating.js"></script>
+    <script defer src="JS/load_in_json_auto.js"></script>
+    <script defer src="JS/load_in_json_input.js"></script>
+    <script defer src="JS/save_data.js"></script>
+    <script defer src="JS/think_ahead.js"></script>
+    <script defer src="JS/changeLevel.js"></script>
+    <script defer src="JS/level_numbers.js"></script>
+    <script defer src="JS/font_template.js"></script>
+    <script defer src="JS/short_cut_functions.js"></script>
+    <script defer src="JS/sidebar.js"></script>
+    <script defer src="JS/selectWords.js"></script>
+
+    <style>
+    </style>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a href="#" onclick="loadJSON('crr.json')">crr</a>
+            <a href="#" onclick="loadJSON('bcbs.json')">bcbs</a>
+        </div>
+        <button class="open_sidebar_button" onclick="open_close_sidebar()">&#9776; </button>
+
+        <input type="text" id="mytext" value="ON"/><!-- Pushed 5000px to the right -->
+        <div class=inspectionBlock></div>
+
+        <div class="btn-group">
+            <button type='open_file' id='upload' onclick=openJSONFile()>Open a Document</button>
+            <button type="save_file" id="save" onclick=exportToJsonFile()>Save Document</button>
+            <button type="changeLevel" id="change" onclick=applyChangeLevel()>Change level</button>
+            <button type='think_ahead' id='think' onclick=thinkAhead()>Think Ahead</button>
+            <label class="switch" id="one_step"><input type="checkbox" name="radio" value='2'><span class="slider round"></span></label>
+            <span style="position: fixed; left:1530px; top:33px">ONE STEP</span>
+            <label class="switch" id="suggestions"><input type="checkbox" name="radio" value='2'><span class="slider round"></span></label>
+            <span style="position: fixed; left:1515px; top:73px">SUGGESTIONS</span>
+        </div>
+
+        <button style="visibility: hidden" id=change_level onclick=adjustLevel()>Change Level</button>
+        <input class="newLevel" id="index">
+        <input class="newLevel" id="level">
+
+        <div class='suggestionData'></div>
+
+        <div class='all_word_info'></div>
+
+        <div class='document' id='default_doc'></div>
+    </body>
+</html>
+

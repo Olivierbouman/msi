@@ -53,7 +53,7 @@ function extract_data(contents, file_name) {
     let json = JSON.parse(contents)     // 0.4-300 // 0.4-200 // 0.4-100 // 0.4-50
     console.log('JSON loaded in and parsed', getTime() - start_loading)
     image_path = file_name.replace('.json', '/')
-    console.log(image_path)
+    console.log('-------', image_path)
     loadInPages(image_path, pages)      // 7.5-300 // 6.5-200 // 2.5-100 // 1.8-50
     console.log('Images are loaded in:', getTime() - start_loading)
     setButtons(json['buttons'])

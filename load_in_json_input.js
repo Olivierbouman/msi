@@ -73,23 +73,26 @@ function extract_data(contents, file_name) {
 
 function loadInPages(image_path, pages){
     i = pages[0]   // Starting page
-    url = 'http://127.0.0.1:5500/'+image_path+'pages/page-001.png'
+    
+    prefix = 'C:/Users/obouman/Documents/REGMINER_GIT/regminer-scrapers-ui/pure_java/bcbs/pages/page-'
+    
+    url = 'C:/Users/obouman/Documents/REGMINER_GIT/regminer-scrapers-ui/pure_java/bcbs/pages/page-001.png'
     while (checkIfPagExists(url) && i < pages[1]) {
         if (i>=100){
-            path = image_path +'pages/page-'+ i +'.png'
+            path = prefix + i +'.png'
             var image = '<img src="'+ path +'">'
         } else if (i>=10){
-            path = image_path +'pages/page-0'+ i +'.png'
+            path = prefix + '0'+ i +'.png'
             var image = '<img src="'+ path +'">'
         } else {
-            path = image_path +'pages/page-00'+ i +'.png'
+            path = prefix + '00'+ i +'.png'
             var image = '<img src="'+ path +'">'
         }
         var page_html = '<div class="page" id="page_'+ i +'">'+ image +'</div>'
         document.body.getElementsByClassName('document')[0].innerHTML += page_html
 
         i += 1
-        url = 'http://127.0.0.1:5500/' + path
+        url = path
     }
 }
 
